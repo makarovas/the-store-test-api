@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
 
 export default class BookStoreService extends Component {
+
+	getBooks = () => {
+		return []
+	}
+
 	render() {
 		return (
 			<div>
-				BookStoreService
+				{this.getBooks()}
 			</div>
 		)
 	}
