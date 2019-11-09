@@ -2,8 +2,17 @@ const initialState = {
 	books: []
 };
 
-cosnt reducer = (state = initialState, action) => {
-	return state;
+const reducers = (state = initialState, action) => {
+	switch (action.type)
+	{
+		case 'BOOKS_LOADED':
+			return {
+				books: action.payload
+			};
+		default:
+			return state;
+	}
+
 }
 
 export { reducers };
