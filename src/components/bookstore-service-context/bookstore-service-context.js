@@ -1,20 +1,11 @@
-import React, { createContext } from 'react';
-import {
-	Provider,
-	Consumer
-} from 'react-redux';
+import React from 'react';
 
 const {
-	Provider: BookStoreServiceProvider,
-	Consumer: BookStoreServiceConsumer
-} = createContext();
+	Provider: BookstoreServiceProvider,
+	Consumer: BookstoreServiceConsumer
+} = React.createContext();
 
-const BookStoreServiceContext = () => {
-	return (
-		<div>
-
-		</div>
-	);
+export {
+	BookstoreServiceProvider,
+	BookstoreServiceConsumer
 };
-
-export { BookStoreServiceConsumer, BookStoreServiceProvider };
