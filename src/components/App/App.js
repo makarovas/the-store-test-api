@@ -1,11 +1,11 @@
 import React from 'react';
 import BookStoreService from '../../services/bookstore-service';
-
-
-function App() {
+import { Spinner } from './../spinner/Spinner'
+const App = () => {
   return (
     <div className="App">
       <BookStoreService />
+      <Spinner />
     </div>
   );
 }
