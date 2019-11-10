@@ -1,11 +1,21 @@
 import React from 'react';
-import { Spinner } from '../spinner/Spinner';
 
-
+import { Switch, Route } from 'react-router-dom';
+import { HomePage, CardPage } from '../pages';
 const App = () => {
   return (
     <div >
-      <Spinner />
+      <Switch>
+        <Route
+          path='/'
+          component={HomePage}
+          exact
+        />
+        <Route
+          path='/Cart'
+          component={CardPage}
+        />
+      </Switch>
     </div>
   );
 }
