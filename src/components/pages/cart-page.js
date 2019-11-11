@@ -8,4 +8,4 @@ const CardPage = () => {
 	);
 };
 
-export CardPage;
+export { CardPage };
